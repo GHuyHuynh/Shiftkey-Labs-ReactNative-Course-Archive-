@@ -6,7 +6,7 @@ function App() {
   useDeviceContext(tw);
 
   return (
-    <View style={tw`w-full h-100vh bg-black`}>
+    <View style={tw`w-full h-100vh bg-blue-500`}>
       <SafeAreaView>
         <Text style={tw`text-center text-white`}>
           Example View III III
