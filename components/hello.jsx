@@ -1,9 +1,15 @@
 import React from 'react'
+import { View, Text, SafeAreaView } from 'react-native';
+import tw, { useDeviceContext } from 'twrnc';
 
-const hello = () => {
+const Hello = () => {
   return (
-    <div>hello</div>
+    <>
+      <Text style={tw`text-center text-white`}>
+        Testing 123
+      </Text>
+    </>
   )
 }
 
-export default hello
+export default Hello

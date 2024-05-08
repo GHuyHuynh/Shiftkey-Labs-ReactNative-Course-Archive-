@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, SafeAreaView } from 'react-native';
 import tw, { useDeviceContext } from 'twrnc';
+import Hello from './components/hello';
 
 function App() {
   useDeviceContext(tw);
@@ -11,6 +12,8 @@ function App() {
         <Text style={tw`text-center text-white`}>
           Example View III III
         </Text>
+
+        <Hello />
       </SafeAreaView>
     </View>
   )
