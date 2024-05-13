@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, SafeAreaView } from 'react-native';
 import tw, { useDeviceContext } from 'twrnc';
-import Hello from './components/hello';
+import SingleNote from './components/SingleNote';
 
 function App() {
   useDeviceContext(tw);
@@ -9,11 +9,7 @@ function App() {
   return (
     <View style={tw`w-full h-100vh bg-blue-500`}>
       <SafeAreaView>
-        <Text style={tw`text-center text-white`}>
-          Example View III III
-        </Text>
-
-        <Hello />
+        <SingleNote />
       </SafeAreaView>
     </View>
   )

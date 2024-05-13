@@ -1,4 +1,6 @@
 import React from 'react'
+import { TextInput } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 /**
  * Single Note Component
@@ -6,14 +8,21 @@ import React from 'react'
  */
 
 const SingleNote = () => {
-    let heading = 'Title';
-    let content = 'Content';
+    const [heading, onChangeText] = React.useState('Heading');
 
     return (
-        <>
-            <h1>Single Note</h1>
-        </>
+        <SafeAreaView>
+            {/* Text input for heading */}
+            <TextInput 
+                onChangeText={onChangeText}
+                value = {heading}
+            />
 
+            {/* Text input for content */}
+            <TextInput 
+                value = {content}
+            />
+        </SafeAreaView>
     )
 }
 
