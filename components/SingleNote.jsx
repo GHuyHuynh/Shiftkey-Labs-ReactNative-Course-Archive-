@@ -1,6 +1,7 @@
 import React from 'react'
 import { TextInput } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import tw from 'twrnc';
 
 /**
  * Single Note Component
@@ -8,21 +9,27 @@ import { SafeAreaView } from 'react-native-safe-area-context';
  */
 
 const SingleNote = () => {
-    const [heading, onChangeText] = React.useState('Heading');
+    //useState variables for title and content
+    const [title, onChangeTitle] = React.useState('Heading');
+    const [content, onChangeContent] = React.useState('Notes');
 
     return (
-        <SafeAreaView>
+        <SafeAreaView style={tw`m-8`}>
             {/* Text input for heading */}
             <TextInput 
-                onChangeText={onChangeText}
-                value = {heading}
+                style={tw`text-2xl font-bold`}
+                onChangeText={onChangeTitle}
+                value = {title}
             />
 
             {/* Text input for content */}
             <TextInput 
+                style={tw`text-1xl`}
+                onChangeText={onChangeContent}
                 value = {content}
             />
-        </SafeAreaView>
+            
+        </SafeAreaView> 
     )
 }
 

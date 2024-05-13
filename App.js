@@ -7,7 +7,7 @@ function App() {
   useDeviceContext(tw);
 
   return (
-    <View style={tw`w-full h-100vh bg-blue-500`}>
+    <View style={tw`w-full h-100vh bg-gray-100`}>
       <SafeAreaView>
         <SingleNote />
       </SafeAreaView>
