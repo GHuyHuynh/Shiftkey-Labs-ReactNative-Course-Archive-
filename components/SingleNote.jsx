@@ -1,6 +1,5 @@
 import React from 'react'
-import { TextInput } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { TextInput, SafeAreaView } from 'react-native';
 import tw from 'twrnc';
 
 /**
